@@ -16,14 +16,123 @@
 <main class="layout">
   <aside class="sidebar">
     <div class="sidebar-main-wrapper">
-      <div class="sidebar-top"></div>
-      <div class="sidebar-apps"></div>
-      <div class="sidebar-pinned"></div>
-      <div class="sidebar-history"></div>
+
+      <div class="sidebar-top">
+        <div class="sidebar-user">
+          <div class="user-account"></div>
+          <div class="action-menu"></div>
+        </div>
+        <div class="sidebar-search">
+          <img src="search.svg" alt="" aria-hidden="true">
+          <input type="text" placeholder="Search for chats..." aria-label="Search chats">
+          <div class="badge">
+            <img src="cmd.svg" alt="Press Cmd + K to start searching for chats">
+            <span class="badge-key">K</span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="sidebar-section sidebar-apps" aria-label="Navigations to apps">
+        <ul class="sidebar-menu">
+          <li class="sidebar-menu__item">
+            <a href="" class="sidebar-menu__link">
+              <img src="chat.svg" alt="" aria-hidden="true">
+              <span class="sidebar-menu__text">Chat</span>
+              <div class="badge">
+                <img src="cmd.svg" alt="">
+                <span class="badge-key">1</span>
+              </div>
+            </a>
+          </li>
+          <li class="sidebar-menu__item">
+            <a href="" class="sidebar-menu__link">
+              <img src="book.svg" alt="" aria-hidden="true">
+              <span class="sidebar-menu__text">Library</span>
+              <div class="badge">
+                <img src="cmd.svg" alt="">
+                <span class="badge-key">2</span>
+              </div>
+            </a>
+          </li>
+          <li class="sidebar-menu__item">
+            <a href="" class="sidebar-menu__link">
+              <img src="apps.svg" alt="" aria-hidden="true">
+              <span class="sidebar-menu__text">Apps</span>
+              <div class="badge">
+                <img src="cmd.svg" alt="">
+                <span class="badge-key">3</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="sidebar-section sidebar-pinned" aria-labelledby="sidebar-pinned">
+        <h3 id="sidebar-pinned" class="sidebar-title">Pinned</h3>
+        <ul class="sidebar-menu">
+          <li class="sidebar-menu__item">
+            <a href="" class="sidebar-menu__link">
+              <span class="sidebar-menu__text">Lorem ipsum dolor sit</span>
+            </a>
+          </li>
+          <li class="sidebar-menu__item">
+            <a href="" class="sidebar-menu__link">
+              <span class="sidebar-menu__text">Duis aute irure dolor in repre</span>
+            </a>
+          </li>
+          <li class="sidebar-menu__item">
+            <a href="" class="sidebar-menu__link">
+              <span class="sidebar-menu__text">Eserunt mollit anim id est laborumol</span>
+            </a>
+          </li>
+          <li class="sidebar-menu__item">
+            <a href="" class="sidebar-menu__link">
+              <span class="sidebar-menu__text">Volutpat diam ut venenatis tellus in</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="sidebar-section sidebar-history" aria-labelledby="sidebar-history">
+        <h3 id="sidebar-history" class="sidebar-title">Chat History</h3>
+        <ul class="sidebar-menu">
+          <li class="sidebar-menu__item">
+            <a href="" class="sidebar-menu__link">
+              <span class="sidebar-menu__text">Quis ipsum suspendisse</span>
+            </a>
+          </li>
+          <li class="sidebar-menu__item">
+            <a href="" class="sidebar-menu__link">
+              <span class="sidebar-menu__text">Ut tristique et egestas quis ipsum sus</span>
+            </a>
+          </li>
+          <li class="sidebar-menu__item">
+            <a href="" class="sidebar-menu__link">
+              <span class="sidebar-menu__text">Sed viverra tellus inhac</span>
+            </a>
+          </li>
+          <li class="sidebar-menu__item">
+            <a href="" class="sidebar-menu__link">
+              <span class="sidebar-menu__text">Volutpat diam ut venenatis tellus in</span>
+            </a>
+          </li>
+          <li class="sidebar-menu__item">
+            <a href="" class="sidebar-menu__link">
+              <span class="sidebar-menu__text">Lorem ipsum dolor sit amet</span>
+            </a>
+          </li>
+          <li class="sidebar-menu__item">
+            <a href="" class="sidebar-menu__link">
+              <span class="sidebar-menu__text">Ad cum earum illo</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
     </div>
-    <button class="button button-primary">
-      <img src="plus.svg" alt="">
-      <span class="button-text" >Start new chat</span>
+    <button class="button button-primary" aria-label="start new chat">
+      <img src="plus.svg" alt="" aria-hidden="true">
+      <span class="button-text">Start new chat</span>
     </button>
   </aside>
   <div class="main"></div>
@@ -31,3 +140,6 @@
 
 </body>
 </html>
+
+
+
