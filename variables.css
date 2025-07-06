@@ -1,0 +1,112 @@
+:root{
+  --Primary-Colors-100: #2388FF;
+  --Primary-Colors-200: #FF2D46;
+  --Primary-Colors-300: #FFC700;
+  --Primary-Colors-400: #63DE77;
+  --Primary-Colors-500: #FFFFFF;
+
+  /* Secondary colors have dark mode */
+  --Seondary-Colors-100: #1777E7;
+  --Seondary-Colors-200: #F6FAFF;
+  --Seondary-Colors-300: #6D39E4;
+  --Seondary-Colors-400: #F2ECFF;
+  --Seondary-Colors-500: #FF649C;
+  --Seondary-Colors-600: #FFEFF5;
+  --Seondary-Colors-700: #3AACFF;
+  --Seondary-Colors-800: #DBF0FF;
+  --Seondary-Colors-900: #4C5EFF;
+  --Seondary-Colors-1000: #E3EBFF;
+  --Seondary-Colors-1100: #1191EE;
+  --Seondary-Colors-1200: #E9F3FF;
+
+  --NeutralsColors-100: #FFFFFF;
+  --NeutralsColors-200: #F7F8FA;
+  --NeutralsColors-300: #F0F2F5;
+  --NeutralsColors-400: #E3E6EA;
+  --NeutralsColors-500: #BAC0CC;
+  --NeutralsColors-600: #666F8D;
+  --NeutralsColors-700: #353E5C;
+  --NeutralsColors-800: #19213D;
+
+  --OverlayColors-Dark100: rgba(25,33,61,0.4);
+  --OverlayColors-Dark200: rgba(25,33,61,0.5);
+  --OverlayColors-Dark300: rgba(25,33,61,0.65);
+  --OverlayColors-Dark400: rgba(25,33,61,0.8);
+  --OverlayColors-Light100: rgba(255,255,255,0.4);
+  --OverlayColors-Light200: rgba(255,255,255,0.5);
+  --OverlayColors-Light300: rgba(255,255,255,0.65);
+  --OverlayColors-Light400: rgba(255,255,255,0.8);
+
+
+  --font-display-10: 4.5rem; /* 72px */
+  --font-display-9: 3.75rem; /* 60px */
+  --font-display-8: 3rem;    /* 48px */
+  --font-display-7: 2.25rem; /* 36px */
+  --font-display-6: 1.875rem;/* 30px */
+  --font-display-5: 1.5rem;  /* 24px */
+  --font-display-4: 1.25rem; /* 20px */
+  --font-display-3: 1.125rem;/* 18px */
+  --font-display-2: 1rem;    /* 16px */
+  --font-display-1: 0.875rem;/* 14px */
+
+  /* Paragraphs */
+  --font-p-large: 1.125rem;  /* 18px */
+  --font-p-default: 1rem;    /* 16px */
+  --font-p-small: 0.875rem;  /* 14px */
+  --font-p-extra-small: 0.75rem; /* 12px */
+
+  /* Line Heights */
+  --lh-tight: 1.15;
+  --lh-normal: 1.25;
+  --lh-loose: 1.5;
+
+  /* Font weights */
+  --f-w-thin: 100;         /* Дуже тонкий */
+  --f-w-extra-light: 200;  /* Extra Light (Ultra Light) */
+  --f-w-light: 300;        /* Light */
+  --f-w-regular: 400;      /* Нормальний, стандарт */
+  --f-w-medium: 500;       /* Трохи жирніший */
+  --f-w-semi-bold: 600;    /* Напівжирний */
+  --f-w-bold: 700;         /* Жирний */
+  --f-w-extra-bold: 800;   /* Дуже жирний */
+  --f-w-black: 900;        /* Найжирніший */
+
+  /* Default Gaps and Paddings */
+  --g-extra-extra-small: 0.25rem; /* 4px */
+  --g-extra-small: 0.5rem;    /* 8px */
+  --g-small: 0.75rem;         /* 12px */
+  --g-defaul: 1rem;           /* 16px */
+  --g-medium: 1.5rem;         /* 24px */
+  --g-large: 2rem;            /* 32px */
+  --g-extra-large: 2.25rem;   /* 36px */
+  --g-extra-extra-large: 2.5rem;  /* 40px */
+  --g-extra-extra-extra-large: 3rem; /* 48px */
+
+  --space-0: 0;
+  --space-1: 0.125rem; /* 2px */
+  --space-2: 0.25rem; /* 4px */
+  --space-3: 0.5rem; /* 8px */
+  --space-4: 0.75rem; /* 12px */
+  --space-5: 1rem; /* 16px */
+  --space-6: 1.25rem; /* 20px */
+  --space-7: 1.5rem; /* 24px */
+  --space-8: 1.75rem; /* 28px */
+  --space-9: 2rem; /* 32px */
+  --space-10: 2.25rem; /* 36px */
+  --space-11: 2.5rem; /* 40px */
+  --space-12: 2.625rem; /* 42px */
+  --space-13: 2.75rem; /* 44px */
+  --space-14: 3rem; /* 48px */
+
+
+  /* Dimensions */
+  --sidebar-min: calc(var(--space-9) * 10);
+  --sidebar-max: calc(var(--space-10) * 10);
+  --sidebar-width: clamp(var(--sidebar-min), 35vw, var(--sidebar-max));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.theme-light) {}
+}
+
+.theme-dark {}
