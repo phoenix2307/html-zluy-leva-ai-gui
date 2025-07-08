@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./variables.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./layout.css">
 
   <title>Ai-Gui</title>
 </head>
@@ -19,12 +20,25 @@
 
 <main class="layout">
   <aside class="sidebar">
-    <div class="sidebar-main-wrapper">
+    <div class="sidebar-body">
 
       <div class="sidebar-top">
-        <div class="sidebar-user">
-          <div class="user-account"></div>
-          <div class="action-menu"></div>
+        <div class="sidebar-user" aria-label="user panel">
+          <div class="user-account">
+            <div class="circle-avatar">
+              <img src="./assets/images/ava-2.png" alt="Phoenix's avatar" class="img-avatar">
+
+            </div>
+            <span class="user-name display-1">Phoenix</span>
+          </div>
+          <div class="action-menu">
+            <button class="button button-secondary" aria-label="open settings">
+              <img src="./settings.svg" alt="" aria-hidden="true">
+            </button>
+            <button class="button button-secondary" aria-label="toggle sidebar">
+              <img src="./book.svg" alt="" aria-hidden="true">
+            </button>
+          </div>
         </div>
         <div class="sidebar-search">
           <img src="search.svg" alt="" aria-hidden="true">

@@ -85,3 +85,16 @@ html {
 .f-extra-bold {
   font-weight: var(--f-w-extra-bold);
 }
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  height: 42px;
+  min-width: 42px;
+  position: relative;
+}
