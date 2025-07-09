@@ -86,8 +86,10 @@ html {
   font-weight: var(--f-w-extra-bold);
 }
 
-.button{
+.button {
+  width: 100%;
   display: flex;
+  gap: var(--space-3);
   justify-content: center;
   align-items: center;
   border-radius: 8px;
@@ -97,19 +99,34 @@ html {
   height: 42px;
   min-width: 42px;
   position: relative;
+  font-size: var(--font-display-1);
+  font-weight: var(--f-w-medium);
+  padding: var(--space-4) var(--space-5);
 
-  .button__icon{
+  .button__icon {
     width: var(--space-5);
     height: var(--space-5);
   }
+
+  &.button-primary {
+    background: var(--Primary-Colors-100);
+    color: var(--Primary-Colors-500);
+    border: 1px solid var(--Primary-Colors-100);
+    transition: all 0.5s ease;
+
+    &:hover {
+      background: var(--NeutralsColors-700);
+      box-shadow: 0 1px 3px 0 rgba(25, 33, 61, 0.10);
+    }
+  }
 }
 
-.svg__icon{
+.svg__icon {
   width: 1em;
   height: 1em;
 }
 
-.badge{
+.badge {
   height: var(--space-8);
   background: var(--NeutralsColors-200);
   box-shadow: 0px 1px 3px 0px rgba(25, 33, 61, 0.10);
