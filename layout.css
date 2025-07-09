@@ -1,8 +1,8 @@
 .layout {
-  height: 100vh;
+  height: 100%;
   display: flex;
   background-color: var(--NeutralsColors-200);
-  padding: var(--g-small) var(--g-small) var(--g-small) 0;
+  padding: var(--g-small) var(--g-small) var(--g-small) 0px;
 }
 
 .sidebar {
@@ -100,6 +100,14 @@
     .sidebar-section {
       width: 100%;
 
+      .sidebar-title {
+        text-transform: uppercase;
+        font-size: var(--font-p-extra-small);
+        padding-left: var(--space-4);
+        margin-bottom: var(--space-4);
+        color: var(--NeutralsColors-500);
+      }
+
       .sidebar-menu {
         .sidebar-menu__item {
           border-radius: var(--g-extra-small);
@@ -130,7 +138,12 @@
           color: var(--NeutralsColors-600);
 
           .sidebar-menu__text {
+            height: var(--space-8);
+            line-height: var(--space-8);
             flex-grow: 1;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
           }
         }
       }
