@@ -96,6 +96,45 @@
 
       }
     }
+
+    .sidebar-section {
+      width: 100%;
+
+      .sidebar-menu {
+        .sidebar-menu__item {
+          border-radius: var(--g-extra-small);
+          border: 1px solid transparent;
+
+          &.sidebar-menu__item--active {
+            background-color: var(--Primary-Colors-500);
+            border: 1px solid var(--NeutralsColors-300);
+            box-shadow: 0 1px 3px 0 rgba(25, 33, 61, 0.10);
+
+            .sidebar-menu__link {
+              color: var(--NeutralsColors-800);
+            }
+          }
+
+          &:hover {
+            border-color: var(--NeutralsColors-300);
+            box-shadow: 0 1px 3px 0 rgba(25, 33, 61, 0.10);
+          }
+        }
+
+        .sidebar-menu__link {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: var(--space-3);
+          padding: var(--space-3) var(--space-3) var(--space-3) var(--space-4);
+          color: var(--NeutralsColors-600);
+
+          .sidebar-menu__text {
+            flex-grow: 1;
+          }
+        }
+      }
+    }
   }
 }
 
