@@ -1,4 +1,4 @@
-html {
+html, textarea{
   font-family: 'Inter', sans-serif;
   font-size: 16px;
 }
@@ -87,7 +87,6 @@ html {
 }
 
 .button {
-  width: 100%;
   display: flex;
   gap: var(--space-3);
   justify-content: center;
@@ -137,4 +136,16 @@ html {
   gap: var(--space-2);
   border-radius: var(--space-2);
   color: var(--NeutralsColors-800);
+}
+
+.icon-button{
+  height: var(--space-12);
+  width: var(--space-12);
+  border: unset;
+  background: unset;
+  cursor: pointer;
+  svg{
+    width: var(--space-5);
+    height: var(--space-5);
+  }
 }
