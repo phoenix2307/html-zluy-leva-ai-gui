@@ -73,14 +73,18 @@
 
       .search-box {
         width: 100%;
-        display: flex;
-        align-items: center;
+
         border-radius: var(--g-extra-small);
         border: 1px solid var(--NeutralsColors-300, #F0F2F5);
         box-shadow: 0px 1px 3px 0px rgba(25, 33, 61, 0.10);
         background-color: var(--Primary-Colors-500);
         padding: var(--g-extra-small) var(--g-extra-small) var(--g-extra-small) var(--g-small);
 
+        .search-box__input-wrapper{
+          display: flex;
+          align-items: center;
+          cursor: text;
+        }
         .search-box__icon {
           width: var(--space-5);
           height: var(--space-5);
